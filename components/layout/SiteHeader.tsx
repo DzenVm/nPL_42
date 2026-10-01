@@ -18,8 +18,13 @@ export function SiteHeader() {
   return (
     <header className={styles.bar}>
       <div className={styles.inner}>
-        {/* Miejsce celowo puste — bez nazwy, bez znaku graficznego. */}
-        <span className={styles.brandSlot} aria-hidden="true" />
+        <a className={styles.brand} href="/" aria-label="Namtofa — strona główna">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3.5 28.5 16 16 28.5 3.5 16 16 3.5Z" />
+            <path d="M16 9v14M9 16h14M11 11l10 10M21 11 11 21" />
+          </svg>
+          <span>Namtofa</span>
+        </a>
 
         <nav className={styles.nav} aria-label="Nawigacja główna">
           <ul className={styles.navList}>

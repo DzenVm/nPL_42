@@ -16,10 +16,9 @@ export default function PrivacyPolicyPage() {
 
       <div className={styles.notice}>
         <p>
-          Serwis działa obecnie pod tymczasowym adresem, do czasu przydzielenia
-          docelowej domeny. Pełne dane identyfikacyjne administratora (nazwa,
-          adres do korespondencji) zostaną opublikowane w tym miejscu razem z
-          uruchomieniem wersji docelowej. Do tego czasu w sprawach ochrony
+          Serwis działa pod adresem namtofa.biz. Pełne dane identyfikacyjne
+          administratora (nazwa i adres do korespondencji) należy uzupełnić
+          przed uruchomieniem wersji produkcyjnej. W sprawach ochrony
           danych osobowych możesz kontaktować się pod adresem{" "}
           <a href={`mailto:${siteConfig.legalEmail}`}>{siteConfig.legalEmail}</a>.
         </p>
@@ -126,8 +125,8 @@ export default function PrivacyPolicyPage() {
       <h2>7. Zmiany polityki</h2>
       <p>
         Ta wersja polityki dotyczy przedpremierowej odsłony serwisu. Wraz z
-        uruchomieniem docelowej domeny i pełnej wersji gry treść zostanie
-        zaktualizowana, a data aktualizacji — wyraźnie oznaczona.
+        uruchomieniem pełnej wersji gry treść zostanie zaktualizowana, a data
+        aktualizacji — wyraźnie oznaczona.
       </p>
     </article>
   );

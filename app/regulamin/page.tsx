@@ -16,8 +16,8 @@ export default function TermsPage() {
 
       <h2>1. Charakter serwisu</h2>
       <p>
-        Serwis dostępny pod niniejszą domeną (docelowo — po jej przydzieleniu)
-        ma obecnie charakter informacyjno-prezentacyjny. Prezentuje opis
+        Serwis dostępny pod adresem namtofa.biz ma obecnie charakter
+        informacyjno-prezentacyjny. Prezentuje opis
         mechaniki, świata i założeń jednoosobowej strategii przeglądarkowej
         przed jej pełnym udostępnieniem pod adresem produkcyjnym.
       </p>

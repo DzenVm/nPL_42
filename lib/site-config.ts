@@ -1,10 +1,8 @@
-// Jedyne miejsce, z którego reszta aplikacji czyta adres domeny. Dzięki temu
-// podmiana docelowej domeny (na razie nieprzydzielonej) to zmiana jednej
-// zmiennej środowiskowej, a nie przeszukiwanie kodu.
+// Jedyne miejsce, z którego reszta aplikacji czyta adres domeny.
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 const siteUrl = (rawSiteUrl && rawSiteUrl.length > 0
   ? rawSiteUrl
-  : "https://twoja-domena-tutaj.pl"
+  : "https://namtofa.biz"
 ).replace(/\/+$/, "");
 
 const siteHost = new URL(siteUrl).host;
@@ -14,10 +12,10 @@ export const siteConfig = {
   host: siteHost,
   contactEmail: `kontakt@${siteHost}`,
   legalEmail: `dane-osobowe@${siteHost}`,
-  title: "Strategia przeglądarkowa dla jednego gracza — bez pobierania, bez pośpiechu",
-  shortTitle: "Strategia przeglądarkowa jednoosobowa",
+  title: "Namtofa — spokojna strategia w przeglądarce",
+  shortTitle: "Namtofa",
   description:
-    "Turowo-czasowa strategia przeglądarkowa dla jednego gracza: gospodarka, drzewo technologii, twierdze i kampania bez presji rywali online. Grasz we własnym tempie, w karcie przeglądarki.",
+    "Namtofa to zapowiedź jednoosobowej strategii przeglądarkowej. Poznaj rozwój osady, technologie i kampanię, a potem wróć do świata gry we własnym tempie.",
   locale: "pl_PL",
   language: "pl",
   themeColor: "#c98a3e",

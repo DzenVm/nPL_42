@@ -18,9 +18,26 @@
   gap: var(--space-sm);
 }
 
-.brandSlot {
-  min-width: 1px;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   flex: 0 0 auto;
+  color: var(--ink-900);
+  font-family: var(--font-display), serif;
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+}
+
+.brand svg {
+  width: 1.65rem;
+  height: 1.65rem;
+  stroke: var(--copper-700);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.25;
 }
 
 .nav {

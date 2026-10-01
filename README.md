@@ -23,10 +23,9 @@ npm run dev
 
 Skopiuj `.env.example` do `.env.local` i uzupełnij:
 
-- `NEXT_PUBLIC_SITE_URL` — docelowa domena produkcyjna. Do czasu jej
-  przydzielenia zostaw wartość zastępczą z `.env.example` — jest to jedyne
-  miejsce, które trzeba zmienić (metadane, sitemap, JSON-LD i adres
-  kontaktowy w stopce czytają tę samą zmienną).
+- `NEXT_PUBLIC_SITE_URL` — adres produkcyjny `https://namtofa.biz`. Jeśli
+  ustawisz tę zmienną w środowisku wdrożeniowym, użyj dokładnie tego adresu
+  (metadane, sitemap, JSON-LD i adres kontaktowy w stopce korzystają z niego).
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_GOOGLE_ADS_ID` — opcjonalne;
   jeśli puste, żaden skrypt pomiarowy się nie ładuje. Skrypty ładują się
   dopiero po wyrażeniu zgody w widocznym na stronie banerze cookie.
@@ -37,12 +36,9 @@ Skopiuj `.env.example` do `.env.local` i uzupełnij:
    wykryty automatycznie jako Next.js — nie są wymagane dodatkowe ustawienia
    builda).
 2. W ustawieniach projektu (Environment Variables) ustaw `NEXT_PUBLIC_SITE_URL`
-   na docelową domenę, gdy zostanie przydzielona; do tego czasu build
-   działa poprawnie również bez tej zmiennej (używana jest wartość
-   zastępcza).
-3. Po podłączeniu docelowej domeny w zakładce Domains projektu Vercel,
-   zaktualizuj `NEXT_PUBLIC_SITE_URL` i wykonaj redeploy, aby metadane,
-   sitemapa i adres kontaktowy w stopce zaczęły wskazywać właściwy adres.
+   na `https://namtofa.biz` we wszystkich używanych środowiskach.
+3. Podłącz `namtofa.biz` w zakładce Domains projektu Vercel i wykonaj redeploy,
+   aby metadane, sitemap i adres kontaktowy w stopce wskazywały właściwy adres.
 
 ## Struktura
 
